@@ -19,7 +19,7 @@ public class GasServer {
       int port = 8888;
       // 데이터그램소켓객체
       DatagramSocket socket = null;
-      // //현재날짜
+      // //현재날짜d
       // Date date = new Date(System.currentTimeMillis());
       // SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
       // String date2 = sdf.format(date);
@@ -41,7 +41,7 @@ public class GasServer {
             // 받을 패킷, 수신대기
             DatagramPacket receivePacket = new DatagramPacket(buffer, buffer.length);
             socket.receive(receivePacket);
-            // 수신확인 //
+            // 수신확인
             String msg = new String(receivePacket.getData(), 0, receivePacket.getLength());
             System.out.println("받은 데이터 : " + msg);
 
