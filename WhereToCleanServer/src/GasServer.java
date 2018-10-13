@@ -41,7 +41,7 @@ public class GasServer {
             // 받을 패킷, 수신대기
             DatagramPacket receivePacket = new DatagramPacket(buffer, buffer.length);
             socket.receive(receivePacket);
-            // 수신확인
+            // 수신확인 //
             String msg = new String(receivePacket.getData(), 0, receivePacket.getLength());
             System.out.println("받은 데이터 : " + msg);
 
